@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-var port = 3018;
+var port = process.env.PORT || 3018;
 
 // body-parser is used to parse data received from request body
 var bodyParser = require('body-parser');
