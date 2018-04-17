@@ -1,0 +1,7 @@
+applications:
+ - name: mock_petrosim_asset_model_service
+   command: node server.js
+   path: dist
+   buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
+   instances: 1
+   memory: 512M
