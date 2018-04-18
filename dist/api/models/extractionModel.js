@@ -578,3 +578,5 @@ exports.s95Json = {
 };
 
 exports.eventhub_data;
+
+exports.scheduler_variable = 0;

@@ -14,4 +14,10 @@ module.exports = function (app) {
 
     app.route('/eventhub')
         .post(mockExtractionService.eventhub_post);
+
+    app.route('/scheduler')
+        .get(mockExtractionService.scheduler_get_hits);
+
+    app.route('/scheduler')
+        .post(mockExtractionService.scheduler_hit);
 };

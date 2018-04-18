@@ -27,3 +27,12 @@ exports.eventhub_post =  function (req, response) {
 exports.eventhub_get = function (req, res) {
     res.json(modelData.eventhub_data);
 };
+
+exports.scheduler_hit = function (req, res) {
+    modelData.scheduler_variable++;
+    res.json("scheduler has hit this link");
+};
+
+exports.scheduler_get_hits = function (req, res) {
+    res.json("scheduler has hit this link " + modelData.scheduler_variable + " times.");
+};
